@@ -1,0 +1,31 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    section.vh-100(style='background-color: #eee;')
+      .container.py-5.h-100
+        .row.d-flex.justify-content-center.align-items-center.h-100
+          .col.col-lg-9.col-xl-7
+            .card.rounded-3
+              .card-body.p-4
+                h4.text-center.my-3.pb-3 Заметки
+                form.row.g-3.justify-content-center.align-items-center.mb-4.pb-2
+                  .col-9
+                    .form-outline
+                      input#form1.form-control(type='text')
+                      label.form-label(for='form1') Введите текст заметки
+                  .col-auto
+                    button.btn.btn-primary(type='submit') Сохранить
+                table.table.mb-4
+                  thead
+                    tr
+                      th(scope='col') No.
+                      th(scope='col') Текст
+                      th(scope='col') Статус
+                      th(scope='col')
+                  tbody
